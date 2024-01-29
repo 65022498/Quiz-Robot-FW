@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-29T10:37:44.954613" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-29T10:46:34.754049" rpa="false" schemaversion="5">
 <suite id="s1" name="Quiz-Robot-FW" source="D:\YedToodYedYed\Quiz-Robot-FW">
 <suite id="s1-s1" name="Tests" source="D:\YedToodYedYed\Quiz-Robot-FW\tests">
 <suite id="s1-s1-s1" name="Shop Cart Test" source="D:\YedToodYedYed\Quiz-Robot-FW\tests\shop_cart_test.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-01-29T10:37:45.096610" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<msg time="2024-01-29T10:46:34.932049" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
 <arg>http://automationexercise.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-29T10:37:45.096610" elapsed="5.093124"/>
+<status status="PASS" start="2024-01-29T10:46:34.932049" elapsed="5.122968"/>
 </kw>
 <test id="s1-s1-s1-t1" name="Test Ecommerce Website" line="13">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:37:50.191735" level="INFO">Opening url 'http://automationexercise.com'</msg>
+<msg time="2024-01-29T10:46:40.057016" level="INFO">Opening url 'http://automationexercise.com'</msg>
 <arg>http://automationexercise.com</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-01-29T10:37:50.191735" elapsed="2.913224"/>
+<status status="PASS" start="2024-01-29T10:46:40.056017" elapsed="1.715151"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:37:53.105959" level="INFO">Clicking element 'css=.card_travel'.</msg>
+<msg time="2024-01-29T10:46:41.773169" level="INFO">Clicking element 'css=.card_travel'.</msg>
 <arg>css=.card_travel</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-29T10:37:53.104959" elapsed="0.051000"/>
+<status status="PASS" start="2024-01-29T10:46:41.772169" elapsed="0.053999"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>All Products</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-01-29T10:37:53.156958" elapsed="5.877557"/>
+<status status="PASS" start="2024-01-29T10:46:41.828168" elapsed="3.438175"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:37:59.042515" level="INFO">Current page contains text 'All Products'.</msg>
+<msg time="2024-01-29T10:46:45.277342" level="INFO">Current page contains text 'All Products'.</msg>
 <arg>All Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-01-29T10:37:59.035515" elapsed="0.007000"/>
+<status status="PASS" start="2024-01-29T10:46:45.266343" elapsed="0.011999"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:37:59.043515" level="INFO">Typing text 'Top' into text field 'id=search_product'.</msg>
+<msg time="2024-01-29T10:46:45.278342" level="INFO">Typing text 'Top' into text field 'id=search_product'.</msg>
 <arg>id=search_product</arg>
 <arg>${PRODUCT_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-29T10:37:59.043515" elapsed="0.119000"/>
+<status status="PASS" start="2024-01-29T10:46:45.278342" elapsed="0.093001"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:37:59.162515" level="INFO">Clicking button 'id=submit_search'.</msg>
+<msg time="2024-01-29T10:46:45.372343" level="INFO">Clicking button 'id=submit_search'.</msg>
 <arg>id=submit_search</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-29T10:37:59.162515" elapsed="2.454184"/>
+<status status="PASS" start="2024-01-29T10:46:45.372343" elapsed="1.399121"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:38:01.628699" level="INFO">Current page contains text 'Searched Products'.</msg>
+<msg time="2024-01-29T10:46:46.779464" level="INFO">Current page contains text 'Searched Products'.</msg>
 <arg>Searched Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-01-29T10:38:01.617699" elapsed="0.011999"/>
+<status status="PASS" start="2024-01-29T10:46:46.771464" elapsed="0.008000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:38:01.630699" level="INFO">Clicking element 'css=a[data-product-id='1']'.</msg>
+<msg time="2024-01-29T10:46:46.780463" level="INFO">Clicking element 'css=a[data-product-id='1']'.</msg>
 <arg>css=a[data-product-id='${PRODUCT_ID}']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-29T10:38:01.629698" elapsed="0.034001"/>
+<status status="PASS" start="2024-01-29T10:46:46.780463" elapsed="0.027001"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:38:01.674699" level="INFO">Current page contains text 'Top'.</msg>
+<msg time="2024-01-29T10:46:46.817467" level="INFO">Current page contains text 'Top'.</msg>
 <arg>${PRODUCT_NAME}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-01-29T10:38:01.664703" elapsed="0.011000"/>
+<status status="PASS" start="2024-01-29T10:46:46.807464" elapsed="0.010003"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-29T10:38:01.675703" level="INFO">Clicking element 'id=menu-item-signup-login'.</msg>
-<msg time="2024-01-29T10:38:01.805698" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-01-29T10:38:01.806698" level="FAIL">Element with locator 'id=menu-item-signup-login' not found.</msg>
+<msg time="2024-01-29T10:46:46.818464" level="INFO">Clicking element 'id=menu-item-signup-login'.</msg>
+<msg time="2024-01-29T10:46:46.925464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-29T10:46:46.925464" level="FAIL">Element with locator 'id=menu-item-signup-login' not found.</msg>
 <arg>id=menu-item-signup-login</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-01-29T10:38:01.675703" elapsed="0.132995">Element with locator 'id=menu-item-signup-login' not found.</status>
+<status status="FAIL" start="2024-01-29T10:46:46.818464" elapsed="0.111005">Element with locator 'id=menu-item-signup-login' not found.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>id=username</arg>
 <arg>${LOGIN_DETAILS}[username]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.808698" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.929469" elapsed="0.000000"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
 <arg>View Cart</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.808698" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.929469" elapsed="0.000998"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
 <arg>Proceed To Checkout</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.808698" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.930467" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>${LOGIN_DETAILS}[password]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.809723" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.930467" elapsed="0.000000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.809723" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.930467" elapsed="0.000000"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
 <arg>${URL_TEST}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.809723" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.930467" elapsed="0.000000"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>${PRODUCT_NAME}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2024-01-29T10:38:01.809723" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-29T10:46:46.930467" elapsed="0.001000"/>
 </kw>
-<status status="FAIL" start="2024-01-29T10:37:50.190734" elapsed="11.618989">Element with locator 'id=menu-item-signup-login' not found.</status>
+<status status="FAIL" start="2024-01-29T10:46:40.056017" elapsed="6.875450">Element with locator 'id=menu-item-signup-login' not found.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-01-29T10:38:01.810698" elapsed="2.094001"/>
+<status status="PASS" start="2024-01-29T10:46:46.932464" elapsed="2.109050"/>
 </kw>
-<status status="FAIL" start="2024-01-29T10:37:44.970610" elapsed="18.935091"/>
+<status status="FAIL" start="2024-01-29T10:46:34.773050" elapsed="14.269463"/>
 </suite>
-<status status="FAIL" start="2024-01-29T10:37:44.968610" elapsed="18.943087"/>
+<status status="FAIL" start="2024-01-29T10:46:34.772049" elapsed="14.276461"/>
 </suite>
-<status status="FAIL" start="2024-01-29T10:37:44.957610" elapsed="18.956086"/>
+<status status="FAIL" start="2024-01-29T10:46:34.757049" elapsed="14.293462"/>
 </suite>
 <statistics>
 <total>

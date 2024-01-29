@@ -18,10 +18,17 @@ Test Ecommerce Website
     Input Text    id=search_product    ${PRODUCT_NAME}
     Click Button    id=submit_search
     Page Should Contain    Searched Products 
+
     # Assuming there's an add to cart button with class 'add-to-cart'
     #Click Element    css=.add-to-cart
     Click Element    css=a[data-product-id='${PRODUCT_ID}']
     Page Should Contain    ${PRODUCT_NAME}
+
+
+
+
+
+
 
 
     Click Element    id=menu-item-signup-login
